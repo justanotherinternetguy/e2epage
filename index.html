@@ -9,6 +9,7 @@
   <body>
     <table>
       <tr>
+        <th>Type of Stutter</th>
         <th>Original Stuttered Audio</th>
         <th>Vanilla Whisper-Small Transcript</th>
         <th>Fine-Tuned Whisper-Small Transcript</th>
@@ -16,6 +17,7 @@
         <th>E2E Predicted Audio</th>
       </tr>
       <tr>
+        <td>Sound Repetition</td>
         <td>
           <audio
             controls
@@ -51,6 +53,7 @@
         </td>
       </tr>
       <tr>
+        <td>Word Repetition</td>
         <td>
           <audio
             controls
@@ -80,6 +83,35 @@
             controls
             id="audioPlayer"
             src="./assets/e2e/e2e_asr-289-121665-0001.wav"
+            preload="auto"
+          ></audio>
+        </td>
+      </tr>
+      <tr>
+        <td>Interjection</td>
+        <td>
+          <audio
+            controls
+            id="audioPlayer"
+            src="./assets/stuttered/HeStutters_1_32.wav"
+            preload="auto"
+          ></audio>
+        </td>
+        <td>What was her, <span class="error">uh, nnnn...</span></td>
+        <td>What was her</td>
+        <td>
+          <audio
+            controls
+            id="audioPlayer"
+            src="./assets/asr/asr-HeStutters_1_32.wav"
+            preload="auto"
+          ></audio>
+        </td>
+        <td>
+          <audio
+            controls
+            id="audioPlayer"
+            src="./assets/e2e/e2e_asr-HeStutters_1_32.wav"
             preload="auto"
           ></audio>
         </td>
