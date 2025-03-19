@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Play Audio on Button Click</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <table>
+      <tr>
+        <th>Original Stuttered Audio</th>
+        <th>Vanilla Whisper-Small Transcript</th>
+        <th>Fine-Tuned Whisper-Small Transcript</th>
+        <th>ASR-Based Predicted Audio</th>
+        <th>E2E Predicted Audio</th>
+      </tr>
+      <tr>
+        <td>
+          <audio
+            controls
+            id="audioPlayer"
+            src="./assets/stuttered/1.wav"
+            preload="auto"
+          ></audio>
+        </td>
+        <td>
+          I know of him and I've listened to him at
+          <span class="error">work workshops</span>, but I've never actually met
+          him, no
+        </td>
+        <td>
+          I know of him and I've listened to him at workshops but I've never
+          actually met him no
+        </td>
+        <td>
+          <audio
+            controls
+            id="audioPlayer"
+            src="./assets/asr/1.wav"
+            preload="auto"
+          ></audio>
+        </td>
+        <td>
+          <audio
+            controls
+            id="audioPlayer"
+            src="./assets/e2e/e2e_1.wav"
+            preload="auto"
+          ></audio>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <audio
+            controls
+            id="audioPlayer"
+            src="./assets/stuttered/289-121665-0001.wav"
+            preload="auto"
+          ></audio>
+        </td>
+        <td>
+          and started out with her <span class="error">shape or shape</span>,
+          that they might feed upon the tender, juicy grasses
+        </td>
+        <td>
+          and started out with her sheep, that they might feed upon the tender
+          juicy grasses
+        </td>
+        <td>
+          <audio
+            controls
+            id="audioPlayer"
+            src="./assets/asr/asr-289-121665-0001.wav"
+            preload="auto"
+          ></audio>
+        </td>
+        <td>
+          <audio
+            controls
+            id="audioPlayer"
+            src="./assets/e2e/e2e_asr-289-121665-0001.wav"
+            preload="auto"
+          ></audio>
+        </td>
+      </tr>
+    </table>
+    <script src="script.js"></script>
+  </body>
+</html>
