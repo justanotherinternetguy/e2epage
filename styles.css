@@ -33,3 +33,8 @@ th {
 .error {
   color: red;
 }
+
+img {
+  margin-top: 5rem;
+  width: 20%;
+}
